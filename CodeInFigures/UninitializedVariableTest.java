@@ -3,7 +3,7 @@ class UninitializedVariableTest
 {
    static void main(String[] args)
    {
-      int x;
+      int x=0;
       Scanner input = new Scanner(System.in);
       try
       {
@@ -13,8 +13,8 @@ class UninitializedVariableTest
       catch(Exception e)
       {
          System.out.println("Exception occurred");
-      }  
-      System.out.println("x is " + x); 
+      }
+      System.out.println("x is " + x);
    }
 }
       
